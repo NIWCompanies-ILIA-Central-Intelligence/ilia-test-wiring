@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ILIA — Test Wiring · CIH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#0076BD; --navy:#004472; --green:#30934C;
+    --ink:#0D1F2D; --muted:#5B6B79; --border:#DCE6EF; --pale:#EBF4FB; --bg:#F5F8FB; --white:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--ink);
+    min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+  .card{background:var(--white);border:1px solid var(--border);border-radius:20px;
+    max-width:680px;width:100%;overflow:hidden;box-shadow:0 18px 50px rgba(0,68,114,.10)}
+  .head{background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%);padding:40px 40px 34px;position:relative;overflow:hidden}
+  .head::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;
+    background:rgba(255,255,255,.07)}
+  .head::before{content:"";position:absolute;right:30px;bottom:-90px;width:180px;height:180px;border-radius:50%;
+    background:rgba(255,255,255,.06)}
+  .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;
+    color:#fff;background:rgba(255,255,255,.16);padding:6px 13px;border-radius:20px;margin-bottom:16px}
+  .head h1{color:#fff;font-size:30px;font-weight:800;letter-spacing:-.4px;line-height:1.1}
+  .head p{color:rgba(255,255,255,.82);font-size:14.5px;margin-top:10px;max-width:90%}
+  .body{padding:32px 40px 38px}
+  .ok{display:flex;align-items:center;gap:12px;background:#E6F5EA;border:1px solid #BFE3C9;
+    border-radius:12px;padding:14px 18px;margin-bottom:26px}
+  .ok .dot{width:30px;height:30px;border-radius:50%;background:var(--green);color:#fff;display:flex;
+    align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto}
+  .ok b{font-size:14.5px;color:#1d6b34}
+  .ok span{display:block;font-size:12.5px;color:#3f7a52;font-weight:500;margin-top:2px}
+  .label{font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .chain{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:28px}
+  .step{background:var(--pale);border:1px solid var(--border);border-radius:12px;padding:14px 10px;text-align:center}
+  .step .n{font-size:11px;font-weight:700;color:var(--blue)}
+  .step .t{font-size:13px;font-weight:700;margin-top:4px}
+  .meta{border-top:1px solid var(--border);padding-top:20px;display:flex;flex-wrap:wrap;gap:18px}
+  .meta div{font-size:12px;color:var(--muted)}
+  .meta b{display:block;color:var(--ink);font-size:13px;font-weight:700;margin-top:2px}
+  .foot{margin-top:24px;font-size:11.5px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="head">
+      <div class="badge">NIW Companies · Simplicity Group</div>
+      <h1>CIH Wiring Test</h1>
+      <p>This page exists to prove one thing: the ILIA Central Intelligence Hub can take a plain-language request and ship a live build — Core → GitHub → published link — end to end.</p>
+    </div>
+    <div class="body">
+      <div class="ok">
+        <div class="dot">&#10003;</div>
+        <div><b>Pipeline confirmed working</b><span>Repo created, prototype built, and published via GitHub Pages.</span></div>
+      </div>
+      <div class="label">The chain that produced this page</div>
+      <div class="chain">
+        <div class="step"><div class="n">01</div><div class="t">Request</div></div>
+        <div class="step"><div class="n">02</div><div class="t">Core</div></div>
+        <div class="step"><div class="n">03</div><div class="t">GitHub</div></div>
+        <div class="step"><div class="n">04</div><div class="t">Live Link</div></div>
+      </div>
+      <div class="meta">
+        <div>Repository<b>ilia-test-wiring</b></div>
+        <div>Organization<b>NIWCompanies-ILIA-Central-Intelligence</b></div>
+        <div>Convention<b>ilia-[feature-name]</b></div>
+      </div>
+      <div class="foot">Built by CIH · NIW&#10231;ILIA Central Intelligence Hub</div>
+    </div>
+  </div>
+</body>
+</html>
